@@ -36,7 +36,23 @@ public class Sandwich {
         } else if (userAge >= 65 ){
             price = price * .8;
         }
+
+        // Loaded Sandwich
+        System.out.println("Would you like a loaded sandwich? Y or N");
+        String loadedSan = input.next();
+        if (loadedSan.equalsIgnoreCase("Yes") || loadedSan.equalsIgnoreCase("Y")){
+            if (size.equalsIgnoreCase("Regular")){
+                price = price + 1;
+            } else if (size.equalsIgnoreCase("Large")){
+                price = price + 1.75;
+            }
+
+        }
         System.out.println("Total cost: " + price);
+
+
+
+
 
     }
 }
