@@ -9,7 +9,7 @@ public class Sandwich {
 
         double regularSize = 5.45;
         double largeSize = 8.95;
-        double price;
+        double price = 0;
 
         System.out.println("Choose Sandwich Size Regular or Large: ");
         String size = input.next();
