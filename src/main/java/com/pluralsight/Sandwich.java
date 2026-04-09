@@ -29,6 +29,14 @@ public class Sandwich {
         // User age
 
         System.out.println("Please enter age: ");
+        int userAge = input.nextInt();
+
+        if (userAge <= 17){
+           price = price * .9;
+        } else if (userAge >= 65 ){
+            price = price * .8;
+        }
+        System.out.println("Total cost: " + price);
 
     }
 }
